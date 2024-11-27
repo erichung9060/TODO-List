@@ -26,7 +26,6 @@ export default {
         '$TODOS',
         JSON.stringify(
           data.todos?.map(todo => ({
-            id: escapeHtml(todo.id),
             name: escapeHtml(todo.name),
             completed: !!todo.completed
           })) ?? []
